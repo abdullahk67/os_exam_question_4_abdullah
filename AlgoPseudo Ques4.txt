@@ -1,0 +1,17 @@
+algorithm/ pseudocode:
+
+1. CREATE A PROCESS FOR SENDING MESSAGE
+2. USING NAMED PIPE (FIFO)
+3. mkfifo("filename", mode );
+4. open the file in write mode : open("filename",mode);
+5. write message (filename, "message", size);
+6. close the file close();
+
+
+1. CREATE A PROCESS FOR RECEIVING MESSAGE
+2. using named pipe(fifo)
+3. open the file in read mode : open("filename",mode);
+4. read message (filename, "message", size);
+5. print the message
+6. print the size of message
+7. close the file close();
